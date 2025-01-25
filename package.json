@@ -1,8 +1,8 @@
 {
     "name": "react-vertical-timeline-component",
     "description": "Vertical timeline for React.js",
-    "author": "Stéphane Monnot",
-    "user": "stephane-monnot",
+    "author": "Santos Alarcón",
+    "user": "SantosAlarcon",
     "version": "3.5.2",
     "scripts": {
         "start": "catalog start docs",
@@ -41,9 +41,7 @@
         "clean-css-cli": "^5.6.3",
         "cross-env": "^7.0.3",
         "del-cli": "^6.0.0",
-        "enzyme": "^3.11.0",
-        "enzyme-adapter-react-16": "^1.15.8",
-        "eslint": "^9.18.0",
+        "eslint": "^9.19.0",
         "eslint-config-airbnb": "^19.0.4",
         "eslint-config-prettier": "^10.0.1",
         "eslint-plugin-import": "^2.31.0",
@@ -62,30 +60,30 @@
         "react-github-corner": "^2.5.0",
         "replace": "^1.2.2",
         "rimraf": "^6.0.1",
-        "sync-exec": "^0.6.2"
+        "sync-exec": "^0.6.2",
+        "@testing-library/jest-dom": "^6.6.3",
+        "@testing-library/dom": "^10.4.0",
+        "@testing-library/react": "^16.2.0",
+        "@types/jest": "^29.5.14",
+        "@types/react": "^19.0.8",
+        "@types/react-dom": "^19.0.3"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/stephane-monnot/react-vertical-timeline.git"
+        "url": "https://github.com/SantosAlarcon/react-vertical-timeline.git"
     },
-    "homepage": "https://stephane-monnot.github.io/react-vertical-timeline/",
     "bugs": {
-        "url": "https://github.com/stephane-monnot/react-vertical-timeline/issues"
+        "url": "https://github.com/SantosAlarcon/react-vertical-timeline/issues"
     },
     "jest": {
+        "testEnvironment": "jest-environment-jsdom",
         "collectCoverage": true,
-        "setupFiles": [
-            "<rootDir>/__tests__/shim.js"
-        ],
         "moduleFileExtensions": [
             "js",
             "jsx",
             "ts",
             "tsx",
             "json"
-        ],
-        "modulePathIgnorePatterns": [
-            "<rootDir>/__tests__/shim.js"
         ],
         "moduleNameMapper": {
             "\\.(css)$": "<rootDir>/node_modules/jest-css-modules"
@@ -101,10 +99,6 @@
         "React Vertical Timeline"
     ],
     "license": "MIT",
-    "pre-push": [
-        "test",
-        "test:lint"
-    ],
     "dependencies": {
         "classnames": "^2.5.1",
         "react-intersection-observer": "^9.15.1"
